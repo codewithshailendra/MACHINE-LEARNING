@@ -1,0 +1,17 @@
+Install OpenCV Python
+1. Open your command prompt and execute
+python -m pip install opencv-python
+2. Test your installation
+Open your Python Command Line Shell
+Execute import cv2 This will import your Open CV package which is shipped as
+CV2. If you don't get any errors you are ready to go.
+Sample Program - Display an Image Using Open CV
+import cv2
+img = cv2.imread("logo.png")
+gray = cv2.imread('logo.png',cv2.IMREAD_GRAYSCALE)
+cv2.imshow('image',img)
+cv2.imshow('gray',gray)
+#Wait for any key before image disappears
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+Note : Keep both image and code file in same directory.
